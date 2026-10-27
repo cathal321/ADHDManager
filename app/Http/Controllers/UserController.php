@@ -27,7 +27,13 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'task' => 'required',
+            'description' => 'required',
+        ]);
+
+        $user = Task::create($request->all());
+        return redirect()->route('tasks.index')->with('success', 'Task created successfully.');
     }
 
     /**
