@@ -32,7 +32,7 @@ class UserController extends Controller
             'description' => 'required',
         ]);
 
-        $user = Task::create($request->all());
+        $task = Task::create($request->all());
         return redirect()->route('tasks.index')->with('success', 'Task created successfully.');
     }
 
