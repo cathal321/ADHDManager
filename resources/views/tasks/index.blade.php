@@ -1,1 +1,1 @@
-<a href="{{ route('tasks.show', $task->id) }}">View</a>
+<a href="{{ route('tasks.show', $task) }}">View</a>
