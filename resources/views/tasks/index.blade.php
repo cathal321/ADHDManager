@@ -1,1 +1,1 @@
-<a href="{{ route('tasks.show', $task) }}">Add</a>
+<a href="{{ route('tasks.create', $task) }}">Add</a>
